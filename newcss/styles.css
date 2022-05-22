@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+  text-align: center;
+}
+
+.textlmao {
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  animation: imgAnimation 0.5s ease;
+}
+
+.profile {
+  border-radius: 100%;
+  max-width: 125px;
+  animation: imgAnimation 0.7s ease;
+}
+
+a {
+  animation: textAnimation 0.7s ease;
+  transition: .25s;
+  text-decoration: none;
+  color: #b9b9b9;
+  fill: #b9b9b9;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+a svg {
+  transition: .25s;
+  width: 30px;
+}
+
+a svg path {
+  transition: .25s;
+  color: #b9b9b9;
+  fill: #b9b9b9;
+}
+
+a:hover {
+  fill: url(#MyGradient);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+a:hover svg {
+  transform: scale(1.1);
+  width: 30px;
+}
+
+a:hover svg path {
+  fill: url(#MyGradient);
+}
+
+@keyframes imgAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(-5em);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0em);
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    letter-spacing: 50px;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 0px;
+  }
+}
